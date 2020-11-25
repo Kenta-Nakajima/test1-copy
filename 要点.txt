@@ -1,0 +1,24 @@
+GitHub：バージョン確認用のサービス
+
+初期設定（ローカル）
+ubuntu@ubuntu:~$ git config --global user.name "Kenta Nakajima"
+ubuntu@ubuntu:~$ git config --global user.email "メアド"
+ubuntu@ubuntu:~$ git config --global core.editor vim
+ubuntu@ubuntu:~$ cat .gitconfig
+
+GitHub上で作ったリポジトリをローカルにクローン
+~$ git clone https://github.com/....(任意のリポジトリのURL)
+
+ローカルからGitHubに上げる
+リポジトリのディレクトリ$ git add hoge.c
+                          git status  (確認)
+
+                          git commit
+                          git commit -m "xxx" 
+
+                          git push   （GitHubに上げる)
+
+ほかのローカルで編集したGitHub上のファイルを持ってくる
+git pull
+
+
